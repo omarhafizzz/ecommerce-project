@@ -1,0 +1,17 @@
+# !! احفظ الملف ده باسم terraform.tfvars وبلاش ترفعه على GitHub !!
+
+aws_region      = "eu-central-1"
+project_name    = "luxe"
+instance_type   = "t3.small"
+public_key_path = "~/.ssh/id_rsa.pub"
+
+# حط الـ IP بتاعك هنا عشان تأمن الـ SSH
+# لو مش عارف IP بتاعك: curl ifconfig.me
+ssh_allowed_cidr = "0.0.0.0/0"
+
+# GitHub repo بتاعك
+github_repo = "https://github.com/YOUR_USERNAME/ecommerce"
+
+# Secrets - غيرهم لقيم قوية
+jwt_secret  = "CHANGE_THIS_TO_A_STRONG_RANDOM_STRING"
+db_password = "CHANGE_THIS_TO_A_STRONG_PASSWORD"
